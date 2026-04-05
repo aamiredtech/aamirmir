@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-04-05T17:37:46.907368",
+  "total_tests": 23,
+  "passed_tests": 23,
+  "failed_tests": 0,
+  "success_rate": 100.0,
+  "passed_test_names": [
+    "Root API",
+    "Get All Content",
+    "Get Hero Content",
+    "Get About Content",
+    "Get Services Content",
+    "Get Blog Posts",
+    "Get Blog Posts (Published Only)",
+    "Create Lead",
+    "Newsletter Subscribe",
+    "Newsletter Subscribe (Duplicate)",
+    "Get Current User",
+    "Get Admin Stats",
+    "Get All Leads",
+    "Get Newsletter Subscribers",
+    "Get All Blog Posts (Admin)",
+    "Create Blog Post",
+    "Update Blog Post",
+    "Delete Blog Post",
+    "Update Site Content",
+    "Invalid Endpoint",
+    "Get Non-existent Blog Post",
+    "Unauthorized Admin Stats",
+    "Invalid Lead Data"
+  ],
+  "failed_test_details": []
+}
