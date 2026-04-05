@@ -13,7 +13,7 @@ export default function Footer() {
               Execution & Capability Architect. Building systems that turn strategy into measurable outcomes for business owners, coaches, and executives globally.
             </p>
             <p className="mt-6 text-xs text-muted-foreground font-satoshi">
-              Aamir Mir Consulting / CertScope Labs
+              Aamir Mir Consulting / CertScope
             </p>
           </div>
 

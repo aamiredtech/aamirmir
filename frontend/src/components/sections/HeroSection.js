@@ -71,16 +71,42 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.7 }}
-          className="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4"
+          className="mt-24"
+          data-testid="hero-credentials"
         >
-          {(content?.companies || [
-            { name: 'Simplilearn' }, { name: 'EC-Council' }, { name: 'IAL Learning' },
-            { name: 'KOViD Group' }, { name: 'IBM' }, { name: 'Standard Chartered' }
-          ]).map((c, i) => (
-            <div key={i} className="border border-border/50 px-4 py-3 text-center" data-testid={`company-badge-${i}`}>
-              <span className="text-xs font-satoshi text-muted-foreground tracking-wide uppercase">{c.name}</span>
+          <div className="flex items-center gap-3 mb-8">
+            <div className="h-px flex-1 bg-border/50" />
+            <span className="text-xs tracking-[0.2em] uppercase font-bold text-muted-foreground font-satoshi">Track Record</span>
+            <div className="h-px flex-1 bg-border/50" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border border-border/40">
+            {/* CertScope — featured block */}
+            <div className="md:col-span-4 border-b md:border-b-0 md:border-r border-border/40 p-6 flex flex-col justify-center" data-testid="credential-certscope">
+              <p className="text-xs tracking-[0.15em] uppercase font-bold text-primary mb-2 font-satoshi">Co-Founder</p>
+              <p className="text-2xl font-black font-cabinet tracking-tighter">CertScope</p>
+              <p className="text-xs text-muted-foreground font-satoshi mt-1.5 leading-relaxed">Certification intelligence & capability architecture</p>
             </div>
-          ))}
+
+            {/* Enterprise logos — compact row */}
+            <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-4">
+              {[
+                { name: 'IBM', role: 'Enterprise Delivery' },
+                { name: 'Standard Chartered', role: 'Operating Systems' },
+                { name: 'Simplilearn', role: 'Growth & AdTech' },
+                { name: 'EC-Council', role: 'Capability Building' },
+              ].map((c, i) => (
+                <div
+                  key={i}
+                  className="border-b sm:border-b-0 border-r border-border/40 last:border-r-0 p-5 flex flex-col justify-center group hover:bg-primary/5 transition-colors"
+                  data-testid={`company-badge-${i}`}
+                >
+                  <p className="text-sm font-cabinet font-bold tracking-tight group-hover:text-primary transition-colors">{c.name}</p>
+                  <p className="text-[10px] text-muted-foreground font-satoshi mt-0.5 tracking-wide uppercase">{c.role}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

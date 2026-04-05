@@ -362,7 +362,7 @@ def get_all_default_content():
             "heading": "Operator. Execution Leader. Capability Architect.",
             "paragraphs": [
                 "I've spent 12+ years inside the machine\u2014not advising from the outside. From enterprise delivery at IBM and Standard Chartered to building growth engines at Simplilearn and EC-Council, I've operated at the intersection of strategy, technology, and execution.",
-                "Today, through Aamir Mir Consulting and CertScope Labs, I help business owners, coaches, and senior executives build the systems that actually drive growth\u2014not just the slides that promise it.",
+                "Today, through Aamir Mir Consulting and CertScope, I help business owners, coaches, and senior executives build the systems that actually drive growth\u2014not just the slides that promise it.",
                 "My approach is simple: Strategy without execution is a hobby. I build systems that execute."
             ],
             "stats": [
@@ -454,12 +454,10 @@ def get_all_default_content():
             {"question": "Do you offer ongoing advisory?", "answer": "Yes. After building the initial systems, I offer advisory retainers for ongoing optimization, scaling, and new system development."}
         ],
         "companies": [
-            {"name": "Simplilearn"},
-            {"name": "EC-Council"},
-            {"name": "IAL Learning Solutions"},
-            {"name": "KOViD Group"},
-            {"name": "IBM"},
-            {"name": "Standard Chartered"}
+            {"name": "IBM", "role": "Enterprise Delivery"},
+            {"name": "Standard Chartered", "role": "Operating Systems"},
+            {"name": "Simplilearn", "role": "Growth & AdTech"},
+            {"name": "EC-Council", "role": "Capability Building"}
         ]
     }
 
