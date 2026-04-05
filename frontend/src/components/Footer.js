@@ -6,8 +6,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-5">
-            <Link to="/" className="text-2xl tracking-wide" style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }}>
-              Aamir <span className="text-primary">Mir</span>
+            <Link to="/" className="group text-2xl tracking-[0.15em] uppercase font-cabinet font-black">
+              <span className="text-foreground group-hover:text-primary transition-colors duration-300">AAMIR</span>
+              {' '}
+              <span className="text-primary group-hover:text-foreground transition-colors duration-300">MIR</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground font-satoshi leading-relaxed max-w-sm">
               Execution & Capability Architect. Building systems that turn strategy into measurable outcomes for business owners, coaches, and executives globally.

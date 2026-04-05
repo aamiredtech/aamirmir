@@ -38,8 +38,10 @@ export default function Navbar() {
       style={{ background: theme === 'dark' ? 'rgba(5,5,5,0.8)' : 'rgba(250,250,250,0.8)' }}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="text-xl tracking-wide" data-testid="nav-logo" style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }}>
-          Aamir <span className="text-primary">Mir</span>
+        <Link to="/" className="group text-xl tracking-[0.15em] uppercase font-cabinet font-black" data-testid="nav-logo">
+          <span className="text-foreground group-hover:text-primary transition-colors duration-300">AAMIR</span>
+          {' '}
+          <span className="text-primary group-hover:text-foreground transition-colors duration-300">MIR</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

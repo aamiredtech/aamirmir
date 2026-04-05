@@ -44,8 +44,10 @@ export default function AdminLayout() {
     <div className="min-h-screen bg-background flex" data-testid="admin-layout">
       <aside className="w-64 border-r border-border flex flex-col h-screen sticky top-0" data-testid="admin-sidebar">
         <div className="p-6 border-b border-border">
-          <Link to="/" className="text-lg tracking-wide" style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }}>
-            Aamir <span className="text-primary">Mir</span>
+          <Link to="/" className="group text-lg tracking-[0.15em] uppercase font-cabinet font-black">
+            <span className="text-foreground group-hover:text-primary transition-colors duration-300">AAMIR</span>
+            {' '}
+            <span className="text-primary group-hover:text-foreground transition-colors duration-300">MIR</span>
           </Link>
           <p className="text-xs text-muted-foreground font-satoshi mt-1">Admin Panel</p>
         </div>
