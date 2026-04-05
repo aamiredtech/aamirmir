@@ -1,0 +1,148 @@
+{
+  "theme_and_archetype": {
+    "domain": "Consulting, Business Strategy, AdTech, Automation",
+    "theme": "hybrid",
+    "primary_archetype": "Archetype 4 (Swiss & High-Contrast)",
+    "emotional_tone": "Premium, minimal, authoritative, clear, no-fluff operator.",
+    "vibe": "McKinsey clarity combined with a modern tech-operator edge. Deep black backgrounds, crisp typography, and high-energy amber/orange accents for focus and action."
+  },
+  "color_palette": {
+    "strategy": "Swiss Brutalist with a tactical edge. Rely heavily on monochrome structure, using the accent color strictly for interactions, CTAs, and guiding the user's eye.",
+    "dark_mode": {
+      "background_base": "#050505",
+      "background_secondary": "#121212",
+      "surface": "#1A1A1A",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#A1A1AA",
+      "accent_primary": "#FF5C00",
+      "accent_hover": "#E65100",
+      "border": "rgba(255, 255, 255, 0.1)",
+      "glass_bg": "rgba(5, 5, 5, 0.6)"
+    },
+    "light_mode": {
+      "background_base": "#FAFAFA",
+      "background_secondary": "#F4F4F5",
+      "surface": "#FFFFFF",
+      "text_primary": "#09090B",
+      "text_secondary": "#52525B",
+      "accent_primary": "#D84300",
+      "accent_hover": "#B33600",
+      "border": "rgba(0, 0, 0, 0.1)",
+      "glass_bg": "rgba(255, 255, 255, 0.7)"
+    }
+  },
+  "typography": {
+    "pairing_strategy": "The Swiss Brutalist (Tech / Art) - Radical weight contrast, using highly structural and modern fonts.",
+    "heading_font": {
+      "family": "Cabinet Grotesk",
+      "import_url": "https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,700,800,900&display=swap",
+      "usage": "H1, H2, H3, bold metric counters. Tracking tight to tighter.",
+      "class": "font-cabinet"
+    },
+    "body_font": {
+      "family": "Satoshi",
+      "import_url": "https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap",
+      "usage": "Paragraphs, UI elements, navigation. Highly legible operator feel.",
+      "class": "font-satoshi"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter leading-none font-black",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-none font-bold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-bold",
+      "h4": "text-lg sm:text-xl font-semibold",
+      "body": "text-base leading-relaxed",
+      "overline": "text-xs tracking-[0.2em] uppercase font-bold text-accent_primary"
+    }
+  },
+  "layout_and_spacing": {
+    "strategy": "Generous Spacing + Bento Grids. High use of negative space.",
+    "padding_scale": "p-6, p-8, p-12, py-24, py-32 for sections",
+    "grid_system": {
+      "marketing": "Mode A: The Tetris Grid. Asymmetric, grid-cols-1 md:grid-cols-12, wide gaps (gap-8). Elements span multiple columns.",
+      "dashboard": "Mode B: The Control Room Grid. grid-cols-1 md:grid-cols-3 lg:grid-cols-4, tight gaps (gap-4). Dense data layout."
+    },
+    "alignment": "Strict left-alignment for paragraphs and dense content. Center-alignment only for specific high-impact hero headings or isolated CTAs."
+  },
+  "surface_strategies": {
+    "navigation": "The 'Crystal' Variant (Glassmorphism). backdrop-blur-xl with a 1px delicate inner stroke (border-white/10 dark, border-black/5 light).",
+    "cards": "Grid Borders ('Technical' Look) - Expose the skeleton. Flat background, border-collapse style, 1px subtle border on right/bottom, no soft drop shadows.",
+    "cta_sections": "The 'Tracing Beam' - Glowing gradient lines along the container edge to signal 'Active/Alive' execution technology.",
+    "corners": "Minimal rounding (rounded-none or rounded-sm max). The brand is sharp, operator-focused, and uncompromising."
+  },
+  "navigation_and_header": {
+    "rules": [
+      "Must have a visible navigation bar on desktop.",
+      "Include Logo/Name, 3-5 core links (About, Services, Case Studies, Blog), Theme Toggle, and a primary CTA (Book Call).",
+      "Header must be sticky/fixed with z-50 and use the Crystal Glassmorphism surface strategy.",
+      "Do NOT use a hamburger menu on desktop viewports."
+    ]
+  },
+  "motion_and_interactions": {
+    "rules": [
+      "Hover states for ALL interactive elements, utilizing color shifts or subtle translations.",
+      "Smooth entrance animations for sections using framer-motion (e.g., staggered fade-ins for the Bento grid).",
+      "Stat counters must animate from 0 to target number on scroll into view.",
+      "Interactive data points in Case Studies / Admin must have clear, high-contrast hover states."
+    ]
+  },
+  "component_strategies": {
+    "ui_library": "Use Shadcn/UI heavily but override the default 'Vercel' look to match the sharp, minimal operator brand.",
+    "icons": "Use @phosphor-icons/react (Duotone weight for marketing, Regular for admin).",
+    "forms": "Use Shadcn Input/Form/Select. High contrast borders, clear focus states (ring-accent_primary).",
+    "tabs_and_accordions": "Use Shadcn components for FAQ and Service detail toggling. Remove standard background colors, use typography weight and bottom-borders for active states."
+  },
+  "pages_and_sections": {
+    "hero": "Extreme impact. Aamir Mir's authority statement front and center. Dual CTA (Book Call in Accent, Request Audit in Outline). Background should be the generated dark/light abstract texture.",
+    "about": "A stark, editorial layout. High-contrast portrait on one side, bold operator philosophy on the other.",
+    "services": "Grid of 5 core services. Each service card explicitly broken down into: [Problem] -> [System] -> [Outcome]. Expose the structural grid.",
+    "systems_thinking": "A high-end visual showcase section utilizing the 3D abstract visualization image. Parallax scroll effect. Text highlights proprietary frameworks.",
+    "case_studies": "Data-heavy but beautiful. Large typography for stat counters (e.g., '+240% ROI'). Scrolling client logos in a continuous marquee (black and white logos only).",
+    "blog": "Editorial grid. Categories clearly marked with tags. Hovering on a card slightly dims others or sharply outlines the active card.",
+    "cta_flow": "Immersive, full-screen takeover or large embedded form for booking/audits. Frictionless.",
+    "admin_panel": "Archetype 4 (Swiss & High-Contrast). Dense, functional, cardless tables. Focus on data density for managing blog posts and leads."
+  },
+  "image_urls": {
+    "hero_dark_bg": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/7605d654-b47b-47c2-a24c-a2e854ea0b48/images/681dbeb579f274b4205d742bc2d68df4459cc2ddeab998adcf1e599dbd2d6a47.png",
+      "category": "Hero Section",
+      "description": "Minimalist dark slate background with a glowing amber geometric line. Use with bg-cover and bg-center."
+    },
+    "hero_light_bg": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/7605d654-b47b-47c2-a24c-a2e854ea0b48/images/2258febc1ae9a877286441700eca82564ac28812a76bdde6adc85c78564a5d93.png",
+      "category": "Hero Section",
+      "description": "Minimalist off-white background with orange and charcoal architectural struts."
+    },
+    "systems_thinking_visual": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/7605d654-b47b-47c2-a24c-a2e854ea0b48/images/f45000984ab9bd99eaeccec01b835def743d32e21c46314a564fc3154729316a.png",
+      "category": "Systems Thinking Section",
+      "description": "Premium abstract 3D visualization of interconnected nodes (black and amber)."
+    },
+    "aamir_portrait": {
+      "url": "https://images.unsplash.com/photo-1685375421073-4dae366f8e84?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxleGVjdXRpdmUlMjBvcGVyYXRvciUyMGJ1c2luZXNzJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc1NDA5ODA1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "About Section",
+      "description": "Executive portrait representing Aamir Mir. Apply a grayscale filter via CSS to match the brand."
+    },
+    "abstract_architecture_1": {
+      "url": "https://images.unsplash.com/photo-1649182784901-48f5f2d40ecc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMGFyY2hpdGVjdHVyZSUyMG1pbmltYWx8ZW58MHx8fHwxNzc1NDA5ODA1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "Case Studies / Blog Thumbs",
+      "description": "Wavy lines architectural abstract."
+    },
+    "abstract_architecture_2": {
+      "url": "https://images.unsplash.com/photo-1550423732-a322236d2ff8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMGFyY2hpdGVjdHVyZSUyMG1pbmltYWx8ZW58MHx8fHwxNzc1NDA5ODA1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "Case Studies / Blog Thumbs",
+      "description": "Concrete structure minimal abstract."
+    }
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: Add the font imports (Cabinet Grotesk and Satoshi) to the global CSS and extend the Tailwind config font-family.",
+    "Implement both Light and Dark modes using next-themes or equivalent. Default to Dark mode.",
+    "Do NOT use standard card styles (no soft shadows, no large border radii). Keep surfaces sharp, flat, and use 1px technical borders.",
+    "The primary color MUST be mapped to the amber/orange hex codes defined. Use it sparingly for massive visual impact (CTAs, key highlights, stat counters).",
+    "Install and use @phosphor-icons/react, framer-motion, and react-fast-marquee for the client logo scroller.",
+    "ALL interactive elements (buttons, inputs, links) must include a data-testid attribute.",
+    "Build the 5 Services as a Bento grid layout, strict HTML/Tailwind styling for the structure. Each box must distinctly show Problem -> System -> Outcome.",
+    "The admin panel must be built using Shadcn UI components but heavily styled to match the minimal operator aesthetic (no padding fluff, high data density).",
+    "For the hero background, apply a subtle parallax effect or slow-moving framer-motion scaling to the provided image URLs.",
+    "Ensure the CTA flow (Book call / Audit) is highly visible across the site, anchoring trust and driving conversions."
+  ]
+}
