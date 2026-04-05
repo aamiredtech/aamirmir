@@ -51,7 +51,7 @@ export default function SystemsSection() {
                   <span className="text-primary text-xs font-bold">&rarr;</span>
                 </div>
               )}
-              <span className="text-5xl font-black font-cabinet text-primary/20 group-hover:text-primary/40 transition-colors">
+              <span className="text-5xl font-black font-cabinet text-primary/40 group-hover:text-primary/70 transition-colors">
                 {step.number}
               </span>
               <h3 className="text-xl sm:text-2xl tracking-tight font-bold font-cabinet mt-4 mb-3">
@@ -74,7 +74,7 @@ export default function SystemsSection() {
           <p className="text-lg sm:text-xl font-cabinet font-bold italic text-foreground" data-testid="systems-quote">
             "{systems.quote || "I don't just advise \u2014 I build systems that execute."}"
           </p>
-          <p className="text-sm text-muted-foreground font-satoshi mt-2">\u2014 Aamir Mir</p>
+          <p className="text-sm text-muted-foreground font-satoshi mt-2">&mdash; Aamir Mir</p>
         </motion.div>
       </div>
     </section>

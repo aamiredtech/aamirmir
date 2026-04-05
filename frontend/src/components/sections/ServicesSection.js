@@ -44,7 +44,7 @@ export default function ServicesSection() {
                 className={`${isLarge ? 'md:col-span-6' : 'md:col-span-4'} border-b md:border-r border-border p-8 hover:bg-primary/5 transition-colors group`}
                 data-testid={`service-card-${i}`}
               >
-                <span className="text-4xl font-black font-cabinet text-primary/30 group-hover:text-primary/60 transition-colors">
+                <span className="text-4xl font-black font-cabinet text-primary/50 group-hover:text-primary transition-colors">
                   {service.number}
                 </span>
                 <h3 className="text-xl sm:text-2xl tracking-tight font-bold font-cabinet mt-4 mb-6">
