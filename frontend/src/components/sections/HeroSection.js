@@ -38,7 +38,7 @@ export default function HeroSection() {
             {hero.overline || 'EXECUTION & CAPABILITY ARCHITECT'}
           </p>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-tighter leading-none font-black font-cabinet mb-6" data-testid="hero-heading">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.1] font-bold font-satoshi mb-6" data-testid="hero-heading">
             {hero.heading || 'I build systems that turn strategy into measurable outcomes.'}
           </h1>
 
