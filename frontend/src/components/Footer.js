@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-5">
-            <Link to="/" className="text-2xl tracking-wide" style={{ fontFamily: "'Gadey', sans-serif" }}>
+            <Link to="/" className="text-2xl tracking-wide" style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }}>
               Aamir <span className="text-primary">Mir</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground font-satoshi leading-relaxed max-w-sm">

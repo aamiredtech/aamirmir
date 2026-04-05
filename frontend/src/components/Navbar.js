@@ -38,7 +38,7 @@ export default function Navbar() {
       style={{ background: theme === 'dark' ? 'rgba(5,5,5,0.8)' : 'rgba(250,250,250,0.8)' }}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="text-xl tracking-wide" data-testid="nav-logo" style={{ fontFamily: "'Gadey', sans-serif" }}>
+        <Link to="/" className="text-xl tracking-wide" data-testid="nav-logo" style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }}>
           Aamir <span className="text-primary">Mir</span>
         </Link>
 

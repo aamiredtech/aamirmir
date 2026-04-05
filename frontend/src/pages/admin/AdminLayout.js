@@ -44,7 +44,7 @@ export default function AdminLayout() {
     <div className="min-h-screen bg-background flex" data-testid="admin-layout">
       <aside className="w-64 border-r border-border flex flex-col h-screen sticky top-0" data-testid="admin-sidebar">
         <div className="p-6 border-b border-border">
-          <Link to="/" className="text-lg tracking-wide" style={{ fontFamily: "'Gadey', sans-serif" }}>
+          <Link to="/" className="text-lg tracking-wide" style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }}>
             Aamir <span className="text-primary">Mir</span>
           </Link>
           <p className="text-xs text-muted-foreground font-satoshi mt-1">Admin Panel</p>
