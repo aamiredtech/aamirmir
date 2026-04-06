@@ -2,9 +2,10 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/sections/HeroSection';
 import LogoMarquee from '@/components/sections/LogoMarquee';
-import AboutSection from '@/components/sections/AboutSection';
-import ServicesSection from '@/components/sections/ServicesSection';
 import StatsSection from '@/components/sections/StatsSection';
+import AboutSection from '@/components/sections/AboutSection';
+import HowWeWorkSection from '@/components/sections/HowWeWorkSection';
+import ServicesSection from '@/components/sections/ServicesSection';
 import SystemsSection from '@/components/sections/SystemsSection';
 import CaseStudiesSection from '@/components/sections/CaseStudiesSection';
 import CTASection from '@/components/sections/CTASection';
@@ -16,9 +17,10 @@ export default function HomePage() {
       <Navbar />
       <HeroSection />
       <LogoMarquee />
-      <AboutSection />
-      <ServicesSection />
       <StatsSection />
+      <AboutSection />
+      <HowWeWorkSection />
+      <ServicesSection />
       <SystemsSection />
       <CaseStudiesSection />
       <CTASection />

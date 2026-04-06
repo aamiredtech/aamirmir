@@ -51,7 +51,7 @@ export default function SystemsSection() {
                   <span className="text-primary text-xs font-bold">&rarr;</span>
                 </div>
               )}
-              <span className="text-5xl font-black font-cabinet text-primary/40 group-hover:text-primary/70 transition-colors">
+              <span className="text-5xl font-black font-cabinet text-primary/60 group-hover:text-primary transition-colors">
                 {step.number}
               </span>
               <h3 className="text-xl sm:text-2xl tracking-tight font-bold font-cabinet mt-4 mb-3">

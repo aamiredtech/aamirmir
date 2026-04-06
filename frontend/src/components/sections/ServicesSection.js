@@ -53,15 +53,15 @@ export default function ServicesSection() {
 
                 <div className="space-y-4">
                   <div>
-                    <p className="text-xs tracking-[0.15em] uppercase font-bold text-primary/70 mb-1 font-satoshi">Problem</p>
+                    <p className="text-xs tracking-[0.15em] uppercase font-bold text-primary mb-1 font-satoshi">Problem</p>
                     <p className="text-sm text-muted-foreground font-satoshi leading-relaxed">{service.problem}</p>
                   </div>
                   <div>
-                    <p className="text-xs tracking-[0.15em] uppercase font-bold text-primary/70 mb-1 font-satoshi">System</p>
+                    <p className="text-xs tracking-[0.15em] uppercase font-bold text-primary mb-1 font-satoshi">System</p>
                     <p className="text-sm text-muted-foreground font-satoshi leading-relaxed">{service.system}</p>
                   </div>
                   <div>
-                    <p className="text-xs tracking-[0.15em] uppercase font-bold text-primary/70 mb-1 font-satoshi">Outcome</p>
+                    <p className="text-xs tracking-[0.15em] uppercase font-bold text-primary mb-1 font-satoshi">Outcome</p>
                     <p className="text-sm text-foreground font-satoshi font-medium leading-relaxed">{service.outcome}</p>
                   </div>
                 </div>

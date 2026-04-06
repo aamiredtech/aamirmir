@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Linkedin, ExternalLink } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -61,14 +62,41 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="font-cabinet font-bold text-sm mb-4">Admin</h4>
-            <Link
-              to="/admin/login"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors font-satoshi"
-              data-testid="footer-admin-link"
-            >
-              Admin Panel
-            </Link>
+            <h4 className="font-cabinet font-bold text-sm mb-4">Connect</h4>
+            <div className="flex flex-col gap-4">
+              <a
+                href="https://www.linkedin.com/in/miraamir/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-2.5 text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="footer-linkedin-personal"
+              >
+                <Linkedin className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                <span className="text-sm font-satoshi leading-snug">Connect with me on LinkedIn</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/certscope/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-2.5 text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="footer-linkedin-certscope"
+              >
+                <Linkedin className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                <span className="text-sm font-satoshi leading-snug">Follow CertScope on LinkedIn</span>
+              </a>
+
+              <a
+                href="https://www.certscope.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-2.5 text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="footer-certscope-website"
+              >
+                <ExternalLink className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                <span className="text-sm font-satoshi leading-snug">Explore CertScope Academy</span>
+              </a>
+            </div>
           </div>
         </div>
 
